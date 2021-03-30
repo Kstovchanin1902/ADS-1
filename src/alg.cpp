@@ -2,7 +2,7 @@
 
 int cbinsearch(int *arr, int size, int value) {
   //  поместить сюда реализацию алгоритма
-  int j, count = 0, left=0, right = size;
+  int j, count = 0, left = 0, right = size;
      do {
         int i = (left + right)/2;
         j = i;
@@ -26,6 +26,6 @@ int cbinsearch(int *arr, int size, int value) {
             } else if (arr[i] > value) {
                         right = i - 1;
                     }
-        }  while (left <= right);  
+        } while (left <= right);
      return 0; // если ничего не найдено
 }
