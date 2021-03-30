@@ -21,10 +21,10 @@ int cbinsearch(int *arr, int size, int value) {
             }
             return count;
         } 
-        else if (arr[i]<value) {
+        else if (arr[i] < value) {
                  i = i + (size-i)/2;
-            } else if (arr[i]>value) {
-                        i = i - (size-i)/2;
+            } else if (arr[i] > value) {
+                        i = i - (size - i)/2;
                     }
         }
         return 0;
